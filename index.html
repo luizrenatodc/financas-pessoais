@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+  <title>Finanças — painel pessoal</title>
+  <meta name="description" content="Painel de finanças pessoais que roda só no navegador: lançamentos, orçamento por categoria, metas, gráficos e CSV. Dados de demonstração fictícios.">
+  <link rel="icon" href="icone.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Ir para o conteúdo</a>
+  <div id="app"></div>
+  <dialog id="dlg" aria-labelledby="dlg-titulo"></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <input type="file" id="arquivo-csv" accept=".csv,text/csv,text/plain" hidden>
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
